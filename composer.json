@@ -1,0 +1,51 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    }
+  ],
+  "name": "a7digital/a7neuralnet",
+  "description": "Provides a library and backend interface to provide ONNX files for extensions",
+  "type": "typo3-cms-extension",
+  "replace": {
+    "a7neuralnet": "self.version",
+    "typo3-ter/a7neuralnet": "self.version"
+  },
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "a7digital GmbH",
+      "email": "dev@a7digital.de",
+      "homepage": "https://www.a7digital.de/"
+    },
+    {
+      "name": "Silke Arend",
+      "email": "arend@a7digital.de",
+      "role": "Authority"
+    },
+    {
+      "name": "Matteo Bonaker",
+      "email": "bonaker@a7digital.de",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "typo3/cms-core": "^9.5"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web",
+      "extension-key": "a7neuralnet"
+    }
+  }
+}
