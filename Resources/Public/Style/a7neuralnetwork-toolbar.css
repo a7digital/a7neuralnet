@@ -1,0 +1,12 @@
+.a7neuralnet-toolbar progress
+{ position: absolute; left: 50%; bottom: 4px; width: 32px; height: 5px; transform: translateX(-50%); transition: height 1s 1s; }
+
+.a7neuralnet-toolbar progress[value="1"],
+.a7neuralnet-toolbar progress:not([value])
+{ height: 0; }
+
+.a7neuralnet-toolbar svg
+{ opacity: 0.7; }
+
+.a7neuralnet-toolbar.active svg
+{ opacity: 1; }

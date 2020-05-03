@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c641dd8840a5e6a757508eef3199995",
+    "content-hash": "9c3821856437753fba066596da2ba19d",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -2398,6 +2398,73 @@
             "time": "2020-03-29T16:12:26+00:00"
         },
         {
+            "name": "typo3/cms-backend",
+            "version": "9.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/backend.git",
+                "reference": "a130cea3b9dcc4bd13df55a6cc85c39ba84423de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/a130cea3b9dcc4bd13df55a6cc85c39ba84423de",
+                "reference": "a130cea3b9dcc4bd13df55a6cc85c39ba84423de",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.*@dev",
+                "typo3/cms-recordlist": "9.5.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "replace": {
+                "typo3/cms-context-help": "*",
+                "typo3/cms-cshmanual": "*",
+                "typo3/cms-func-wizards": "*",
+                "typo3/cms-wizard-crpages": "*",
+                "typo3/cms-wizard-sortpages": "*"
+            },
+            "suggest": {
+                "typo3/cms-install": "To generate url to install tool in environment toolbar"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "protected": true,
+                        "partOfFactoryDefault": true,
+                        "partOfMinimalUsableSystem": true
+                    },
+                    "extension-key": "backend"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Backend\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Classes for the TYPO3 backend.",
+            "homepage": "https://typo3.org",
+            "time": "2020-04-06T06:05:04+00:00"
+        },
+        {
             "name": "typo3/cms-cli",
             "version": "2.0.0",
             "source": {
@@ -2613,6 +2680,180 @@
             "description": "The core library of TYPO3.",
             "homepage": "https://typo3.org",
             "time": "2020-04-02T11:03:48+00:00"
+        },
+        {
+            "name": "typo3/cms-extbase",
+            "version": "9.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/extbase.git",
+                "reference": "1a3828e59e06cbbb1a7c999c59d3e21a79de2fdd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/1a3828e59e06cbbb1a7c999c59d3e21a79de2fdd",
+                "reference": "1a3828e59e06cbbb1a7c999c59d3e21a79de2fdd",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-scheduler": "Additional scheduler tasks"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "protected": true,
+                        "partOfFactoryDefault": true,
+                        "partOfMinimalUsableSystem": true
+                    },
+                    "extension-key": "extbase"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Extbase\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A framework to build extensions for TYPO3 CMS.",
+            "homepage": "https://typo3.org",
+            "time": "2020-04-02T10:00:32+00:00"
+        },
+        {
+            "name": "typo3/cms-fluid",
+            "version": "9.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/fluid.git",
+                "reference": "4bd4467f9dc7d8a8c6609fa7cfac4b4f1112fcd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/fluid/zipball/4bd4467f9dc7d8a8c6609fa7cfac4b4f1112fcd6",
+                "reference": "4bd4467f9dc7d8a8c6609fa7cfac4b4f1112fcd6",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.*@dev",
+                "typo3/cms-extbase": "9.5.*@dev",
+                "typo3fluid/fluid": "^2.6.8"
+            },
+            "conflict": {
+                "typo3/cms": "*",
+                "typo3fluid/fluid": "2.6.4 || 2.6.5"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "protected": true,
+                        "partOfFactoryDefault": true,
+                        "partOfMinimalUsableSystem": true
+                    },
+                    "extension-key": "fluid"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Fluid\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Fluid is a next-generation templating engine which makes the life of extension authors a lot easier!",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:53:35+00:00"
+        },
+        {
+            "name": "typo3/cms-recordlist",
+            "version": "9.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/recordlist.git",
+                "reference": "450bba0836cd73051e366ffd4c3e1f3af92de26b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/recordlist/zipball/450bba0836cd73051e366ffd4c3e1f3af92de26b",
+                "reference": "450bba0836cd73051e366ffd4c3e1f3af92de26b",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "protected": true,
+                        "partOfFactoryDefault": true,
+                        "partOfMinimalUsableSystem": true
+                    },
+                    "extension-key": "recordlist"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Recordlist\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "List of database-records",
+            "homepage": "https://typo3.org",
+            "time": "2020-04-06T09:39:47+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
@@ -2977,6 +3218,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "^7.4"
+    },
     "platform-dev": []
 }

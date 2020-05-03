@@ -1,0 +1,3 @@
+[submodule "Resources/Public/JavaScript/onnxjs"]
+	path = Resources/Public/JavaScript/onnxjs
+	url = https://github.com/microsoft/onnxjs.git

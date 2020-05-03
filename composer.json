@@ -32,7 +32,10 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "typo3/cms-core": "^9.5"
+    "typo3/cms-core": "^9.5",
+    "typo3/cms-backend": "^9.5",
+    "typo3/cms-fluid": "^9.5",
+    "ext-json": "^7.4"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master"

@@ -1,0 +1,15 @@
+<html
+	xmlns:be="http://typo3.org/ns/TYPO3/CMS/Backend/ViewHelpers"
+	xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+	xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+<f:spaceless>
+	<span class="toolbar-item-link a7neuralnet-toolbar" data-config="{configJson}" data-shared-worker-url="{f:uri.resource(path: 'JavaScript/NeuralNetworkSharedWorker.js')}">
+		<span class="toolbar-item-icon">
+			<core:icon identifier="a7neuralnet-toolbar-icon" size="small" alternativeMarkupIdentifier="inline" />
+			<progress max="1" />
+		</span>
+	</span>
+</f:spaceless>
+</html>
